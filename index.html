@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Restaurant Website</title>
-    <!-- Add Font Awesome CSS for social icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">   
+    <title>Modern Restaurant</title>
+
+    <!-- Add Font Awesome CSS for social icons and carousel controls -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+ 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     
@@ -14,12 +16,26 @@
         /* Add your custom styles here */
         body {
             padding-top: 56px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa; /* Light gray background */
+            color: #343a40; /* Dark gray text color */
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
         }
+        h1, h2, h3 {
+                font-family: 'Open Sans', sans-serif;
+}
+p {
+    font-family: 'Arial', sans-serif;
+}
 
         /* Adjust padding for fixed navbar */
         @media (min-width: 992px) {
             body {
                 padding-top: 80px;
+               
+
             }
         }
 
@@ -27,10 +43,11 @@
         .navbar-nav .nav-link {
             position: relative;
             transition: all 0.3s ease;
+            color: #007bff; /* Blue link color */
         }
 
         .navbar-nav .nav-link:hover {
-            color: #007bff; /* Change the color on hover */
+            color: #0056b3; /* Darker blue on hover */
         }
 
         .navbar-nav .nav-link::after {
@@ -40,7 +57,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background-color: #007bff; /* Change the color */
+            background-color: #007bff; /* Blue underline color */
             transition: all 0.3s ease;
         }
 
@@ -50,16 +67,16 @@
 
         /* Active link style */
         .navbar-nav .nav-item.active .nav-link {
-            color: #007bff !important; /* Change the color for active link */
-            font-weight: bold; /* Add bold style for active link */
+            color: #0056b3 !important; /* Darker blue for active link */
+            font-weight: bold;
         }
 
         .navbar-nav .nav-item.active .nav-link::after {
             width: 100%;
         }
 
-             /* Header Section */
-             #header {
+        /* Header Section */
+        #header {
             background: url('https://source.unsplash.com/1600x900/?restaurant') center/cover no-repeat;
             color: white;
             text-align: center;
@@ -68,43 +85,57 @@
 
         #header h1 {
             font-size: 3em;
+            margin-bottom: 20px;
+            color: #17a2b8; /* Aqua blue text color */
         }
 
         #header p {
             font-size: 1.5em;
             margin-top: 20px;
+            color: #fff; /* White text color */
         }
 
-       /* Custom styles for menu items */
-       .card {
-        transition: transform 0.3s;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        height: 100%; /* Set a fixed height for all cards */
-    }
+        /* Custom styles for menu items */
+        .card {
+            transition: transform 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 100%; /* Set a fixed height for all cards */
+        }
 
-    .card:hover {
-        transform: scale(1.05);
-    }
+        .card:hover {
+            transform: scale(1.05);
+        }
 
-    .card-title {
-        font-size: 1.2em;
-        margin-bottom: 0.5em;
-        color: #333;
-    }
+        .card-title {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+            color: #343a40; /* Dark gray text color */
+        }
 
-    .card-text {
-        font-size: 0.9em;
-        color: #666;
-    }
+        .card-text {
+            font-size: 0.9em;
+            color: #6c757d; /* Gray text color */
+        }
 
-    .card-text.price {
-        font-weight: bold;
-        color: #d9534f; /* Bootstrap's danger color for emphasis */
-    }
+        .card-text.price {
+            font-weight: bold;
+            color: #d9534f; /* Bootstrap's danger color for emphasis */
+        }
+
+        /* More Food Button */
+        #moreFoodButton {
+            background-color: #007bff; /* Blue button color */
+            border-color: #007bff; /* Blue button border color */
+            color: #fff; /* White text color */
+        }
+
+        #moreFoodButton:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            border-color: #0056b3; /* Darker blue button border on hover */
+        }
     </style>
 </head>
 <body>
-
 
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -129,11 +160,12 @@
         </ul>
     </div>
 </nav>
+
 <!-- Header Section -->
 <header id="header">
     <div class="container">
-        <h1 class="display-4">Welcome to Our Restaurant</h1>
-        <p>Delight your taste buds with our exquisite dishes in a cozy ambiance.</p>
+        <h1 class="display-4">Welcome to Our Modern Restaurant</h1>
+        <p>Experience culinary excellence in a contemporary setting.</p>
     </div>
 </header>
 
@@ -179,54 +211,54 @@
         </div>
     </div>
     <br>
-   
+
     <!-- Add a parent row for the additional menu items -->
-<div class="row" id="additionalMenuItems">
-    <!-- Additional Menu Item 1 -->
-    <div class="col-md-4 additional-menu-item d-none">
-        <div class="card mb-3">
-            <img src="https://source.unsplash.com/400x300/?food" class="card-img-top" alt="Menu Item 3">
+    <div class="row" id="additionalMenuItems">
+        <!-- Additional Menu Item 1 -->
+        <div class="col-md-4 additional-menu-item d-none">
+            <div class="card mb-3">
+                <img src="https://source.unsplash.com/400x300/?food" class="card-img-top" alt="Menu Item 3">
                 <div class="card-body">
                     <h5 class="card-title">Savory Dish 3</h5>
                     <p class="card-text">A delectable description of Dish 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
                     <p class="card-text">Price: $<?= rand(5, 20) ?>.99</p>
                 </div>
+            </div>
         </div>
-    </div>
 
-    <!-- Additional Menu Item 2 -->
-    <div class="col-md-4 additional-menu-item d-none">
-        <div class="card mb-4">
-            <img src="https://source.unsplash.com/400x300/?food" class="card-img-top" alt="Menu Item 3">
-            <div class="card-body">
-                <h5 class="card-title">Savory Dish 3</h5>
-                <p class="card-text">A delectable description of Dish 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                <p class="card-text">Price: $<?= rand(5, 20) ?>.99</p>
+        <!-- Additional Menu Item 2 -->
+        <div class="col-md-4 additional-menu-item d-none">
+            <div class="card mb-4">
+                <img src="https://source.unsplash.com/400x300/?food" class="card-img-top" alt="Menu Item 3">
+                <div class="card-body">
+                    <h5 class="card-title">Savory Dish 3</h5>
+                    <p class="card-text">A delectable description of Dish 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    <p class="card-text">Price: $<?= rand(5, 20) ?>.99</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Menu Item 2 -->
+        <div class="col-md-4 additional-menu-item d-none">
+            <div class="card mb-4">
+                <img src="https://source.unsplash.com/400x300/?food" class="card-img-top" alt="Menu Item 3">
+                <div class="card-body">
+                    <h5 class="card-title">Savory Dish 3</h5>
+                    <p class="card-text">A delectable description of Dish 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    <p class="card-text">Price: $<?= rand(5, 20) ?>.99</p>
+                </div>
             </div>
         </div>
     </div>
-      <!-- Additional Menu Item 2 -->
-      <div class="col-md-4 additional-menu-item d-none">
-        <div class="card mb-4">
-            <img src="https://source.unsplash.com/400x300/?food" class="card-img-top" alt="Menu Item 3">
-            <div class="card-body">
-                <h5 class="card-title">Savory Dish 3</h5>
-                <p class="card-text">A delectable description of Dish 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                <p class="card-text">Price: $<?= rand(5, 20) ?>.99</p>
-            </div>
-        </div>
+    <br>
+
+    <!-- More Food Button -->
+    <div class="text-center">
+        <!-- Add this button to your Menu Section -->
+        <button id="moreFoodButton" class="btn btn-primary mt-3">
+            <i class="fas fa-utensils"></i> More Food
+        </button>
     </div>
- 
-    
-</div>
-   <!-- More Food Button -->
-   <div class="text-center">
-    <!-- Add this button to your Menu Section -->
-    <button id="moreFoodButton" class="btn btn-primary mt-3">More Food</button>
-
-
-</div>
-
 </section>
 
 <!-- Google Location Section -->
@@ -243,19 +275,16 @@
     ></iframe>
 </section>
 
-
-
 <!-- Contact Us Section -->
-<section id="contact"  class="container mt-4 mb-4">
+<section id="contact" class="container mt-4 mb-4">
     <h2 class="text-center">Contact Us</h2>
-    
     <div class="row">
         <!-- Contact Information -->
         <div class="col-md-4">
             <p><strong>Phone:</strong> +1 123-456-7890</p>
             <p><strong>Email:</strong> info@example.com</p>
             <p><strong>Location:</strong> 123 Main Street, City, Country</p>
-            
+
             <!-- Social Icons -->
             <div class="social-icons">
                 <a href="#" class="fa fa-facebook"></a>
