@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Modern Restaurant</title>
+    <title>Divadis</title>
+
+
 
     <!-- Add Font Awesome CSS for social icons and carousel controls -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -133,13 +135,66 @@ p {
             background-color: #0056b3; /* Darker blue on hover */
             border-color: #0056b3; /* Darker blue button border on hover */
         }
+
+        .contact-info {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .contact-info {
+    text-align: center;
+}
+
+    .contact-form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+    .contact-item {
+    margin-bottom: 20px;
+}
+.contact-item i {
+    color: #007bff; /* Icon color */
+}
+
+.contact-item p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #007bff; /* Icon color */
+}
+
+.social-icons a:hover {
+    color: #0056b3; /* Icon color on hover */
+}
+
+    .contact-form label {
+        font-weight: bold;
+    }
+
+    .contact-form textarea {
+        resize: vertical;
+    }
+
+    .g-recaptcha {
+        margin-top: 15px;
+    }
     </style>
 </head>
 <body>
 
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="#"><img src="your-logo.png" alt="Logo" height="30"></a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#"><img src="your-logo.png" alt="DIVADIS" height="30"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -164,7 +219,7 @@ p {
 <!-- Header Section -->
 <header id="header">
     <div class="container">
-        <h1 class="display-4">Welcome to Our Modern Restaurant</h1>
+        <h1 class="display-4">Welcome to Our DIVADIS Restaurant</h1>
         <p>Experience culinary excellence in a contemporary setting.</p>
     </div>
 </header>
@@ -279,24 +334,13 @@ p {
 <section id="contact" class="container mt-4 mb-4">
     <h2 class="text-center">Contact Us</h2>
     <div class="row">
-        <!-- Contact Information -->
-        <div class="col-md-4">
-            <p><strong>Phone:</strong> +1 123-456-7890</p>
-            <p><strong>Email:</strong> info@example.com</p>
-            <p><strong>Location:</strong> 123 Main Street, City, Country</p>
+        
+     
 
-            <!-- Social Icons -->
-            <div class="social-icons">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <!-- Add more social icons as needed -->
-            </div>
-        </div>
 
         <!-- Contact Form -->
-        <div class="col-md-8">
-            <form>
+        <div class="col-md-7">
+            <form class="contact-form">
                 <div class="form-group">
                     <label for="subject">Subject</label>
                     <input type="text" class="form-control" id="subject" name="subject" required>
@@ -315,6 +359,26 @@ p {
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
+
+        <div class="col-md-5">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone fa-2x"></i>
+                    <p><strong>Phone:</strong> +1 123-456-7890</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <p><strong>Email:</strong> info@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p><strong>Location:</strong> 123 Main Street, City, Country</p>
+                </div>
+        
+               
+            </div>
+        </div>
     </div>
 </section>
 
@@ -323,7 +387,14 @@ p {
 
 <!-- Footer Section -->
 <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; <span id="currentYear"></span> Your Restaurant Name. All Rights Reserved.</p>
+     <!-- Social Icons -->
+     <div class="social-icons">
+        <a href="#" class="fab fa-facebook fa-2x"></a>
+        <a href="#" class="fab fa-youtube fa-2x"></a>
+        <a href="#" class="fab fa-instagram fa-2x"></a>
+        <!-- Add more social icons as needed -->
+    </div>
+    <p>&copy; <span id="currentYear"></span> DIVADIS. All Rights Reserved.</p>
 </footer>
 
 
