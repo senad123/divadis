@@ -92,13 +92,13 @@ font-family: 'Arial', sans-serif;
 /* CSS animation to smoothly change background images */
 @keyframes changeBackground {
     0%, 100% {
-        background: url('../images/1.jpeg') center/cover no-repeat;
+        background: url('./images/1.jpeg') center/cover no-repeat;
     }
     33% {
-        background: url('../images/2.jpeg') center/cover no-repeat;
+        background: url('./images/2.jpeg') center/cover no-repeat;
     }
     66% {
-        background: url('../images/3.jpeg') center/cover no-repeat;
+        background: url('./images/3.jpeg') center/cover no-repeat;
     }
   
 }
