@@ -151,6 +151,8 @@ background: rgba(0, 0, 0, 0.2); /* Adjust the overlay color and opacity */
     color: #d9534f; /* Bootstrap's danger color for emphasis */
 }
 
+
+
 /* More Food Button */
 #moreFoodButton {
     background-color: #007bff; /* Blue button color */

@@ -28,16 +28,19 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#header" onclick="closeNav()">Home</a>
+                <a class="nav-link" href="#header" onclick="closeNav()">Startseite</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#menu" onclick="closeNav()">Menu</a>
+                <a class="nav-link" href="#about" onclick="closeNav()">Über uns</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#location" onclick="closeNav()">Location</a>
+                <a class="nav-link" href="#menu" onclick="closeNav()">Speisekarte</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact" onclick="closeNav()">Contact</a>
+                <a class="nav-link" href="#location" onclick="closeNav()">Standort</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact" onclick="closeNav()">Kontakt</a>
             </li>
         </ul>
     </div>
@@ -56,7 +59,7 @@
 
 <!-- About Section -->
 <section id="about" class="container mt-4">
-    <h2 class="text-center mb-4">About Us</h2>
+    <h2 class="text-center mb-4">About Us</h2><br>
 
     <div class="row">
         <div class="col-md-12 ">
@@ -80,17 +83,22 @@
 
 <!-- Menu Section -->
 <section id="menu" class="container mt-4">
-    <h2 class="text-center">Menu</h2>
+    <h2 class="text-center">Menu</h2><br>
 
     <div class="row">
         <!-- Menu Item 1 -->
         <div class="col-md-4">
             <div class="card mb-4">
-                <img src="./images/menu_1.png" class="card-img-top" alt="Menu Item 1">
+             
+                <img src="./images/menu_1.png" class="card-img-top" alt="Menu Item 1" >
+
                 <div class="card-body">
                     <h5 class="card-title">Unsere Spezialitäten</h5>
                     <p class="card-text">Entdecken Sie die Vielfalt unserer italienisch-balkanischen Spezialitäten. Von aromatischen Pasta-Gerichten bis zu herzhaften Grillkreationen bieten wir kulinarische Höhepunkte. </p>
-                    <p class="card-text">Preis 12,00€</p>
+                    
+                </div>
+                <div class="card-footer">
+                    <p class="card-text">Preis 12,00€</p>   
                 </div>
             </div>
         </div>
@@ -98,22 +106,25 @@
         <!-- Menu Item 2 -->
         <div class="col-md-4">
             <div class="card mb-4">
-                <img src="./images/menu_2.png" class="card-img-top" alt="Menu Item 2">
+                <img src="./images/menu_2.png" class="card-img-top" alt="Menu Item 2"">
                 <div class="card-body">
                     <h5 class="card-title">Salat / Vorspeise</h5>
                     <p class="card-text">Erleben Sie die Frische und Raffinesse unserer Salat- und Vorspeisenauswahl. Unsere Küchenkünstler zaubern eine Vielfalt an köstlichen und gesunden Gerichten, die Ihren Gaumen verführen werden.</p>
+                </div>
+                <div class="card-footer">
                     <p class="card-text">Preis: 7,00-8,00€ </p>
                 </div>
             </div>
         </div>
 
-        <!-- Menu Item 3 -->
         <div class="col-md-4">
             <div class="card mb-4">
                 <img src="./images/menu_3.png" class="card-img-top" alt="Menu Item 3">
                 <div class="card-body">
                     <h5 class="card-title">Fleischgerichte</h5>
-                    <p class="card-text">Entdecken Sie köstliche Fleischgerichte in unserem Restaurant. Von saftigen Steaks bis zu herzhaften Braten bieten wir Ihnen erstklassige Genüsse. </p>
+                    <p class="card-text">Entdecken Sie köstliche Fleischgerichte in unserem Restaurant. Von saftigen Steaks bis zu herzhaften Braten bieten wir Ihnen erstklassige Genüsse.</p>
+                </div>
+                <div class="card-footer">
                     <p class="card-text">Preis: 7,00-12,00€</p>
                 </div>
             </div>
@@ -121,45 +132,7 @@
     </div>
     <br>
 
-    <!-- Add a parent row for the additional menu items -->
-    <div class="row" id="additionalMenuItems">
-        <!-- Additional Menu Item 1 -->
-        <div class="col-md-4 additional-menu-item d-none">
-            <div class="card mb-3">
-                <img src="https://source.unsplash.com/400x300/?food" class="card-img-top" alt="Menu Item 3">
-                <div class="card-body">
-                    <h5 class="card-title">Savory Dish 3</h5>
-                    <p class="card-text">A delectable description of Dish 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                    <p class="card-text">Price: $<?= rand(5, 20) ?>.99</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Additional Menu Item 2 -->
-        <div class="col-md-4 additional-menu-item d-none">
-            <div class="card mb-4">
-                <img src="https://source.unsplash.com/400x300/?food" class="card-img-top" alt="Menu Item 3">
-                <div class="card-body">
-                    <h5 class="card-title">Savory Dish 3</h5>
-                    <p class="card-text">A delectable description of Dish 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                    <p class="card-text">Price: $<?= rand(5, 20) ?>.99</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Additional Menu Item 2 -->
-        <div class="col-md-4 additional-menu-item d-none">
-            <div class="card mb-4">
-                <img src="https://source.unsplash.com/400x300/?food" class="card-img-top" alt="Menu Item 3">
-                <div class="card-body">
-                    <h5 class="card-title">Savory Dish 3</h5>
-                    <p class="card-text">A delectable description of Dish 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                    <p class="card-text">Price: $<?= rand(5, 20) ?>.99</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
+ 
 
     <!-- More Food Button -->
     <!-- <div class="text-center">
@@ -173,14 +146,14 @@
 <div class="text-center">
     <!-- Add this button to your Menu Section -->
     <a href="./menu/Divadis_Neueröffnung_2.pdf" target="_blank" class="btn btn-primary mt-3">
-        <i class="fas fa-utensils"></i> More Food
+        <i class="fas fa-utensils"></i> Speisekarte
     </a>
 </div>
 </section>
 
 <!-- Google Location Section -->
 <section id="location" class="container mt-4">
-    <h2 class="text-center">Our Location</h2>
+    <h2 class="text-center">Unsere Position</h2><br>
     <!-- Embed Google Maps -->
     <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.7038473724414!2d8.110999315601666!3d47.41371907917263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4795dcbab5538b5d%3A0x35c98f501c86c9b5!2sAarauerstrasse%2039%2C%205116%20Schinznach%20Bad%2C%20Switzerland!5e0!3m2!1sen!2sus!4vYOUR_MAP_VERSION"
@@ -194,11 +167,8 @@
 
 <!-- Contact Us Section -->
 <section id="contact" class="container mt-4 mb-4">
-    <h2 class="text-center">Contact Us</h2>
+    <h2 class="text-center">Kontaktiere uns</h2><br>
     <div class="row">
-        
-     
-
 
         <!-- Contact Form -->
         <div class="col-md-7">
