@@ -1,0 +1,138 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+header {
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 50px 0 0px;
+  }
+}
+
+section {
+  padding: 50px 0;
+}
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Raleway');
+
+.menu
+{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	background: transparent;
+}
+.scrolled{
+  background-color: #263238;
+  transition: 0.3s;	
+}
+ul{
+	text-align: right;
+
+	padding: 0;
+}
+ul li{	
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+}
+ul li:hover{
+	background: #263238;
+}
+ul li:active{
+	background: #263238;
+}
+li a {
+	display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+	
+}
+li {	
+  font-weight: bold;
+  position: relative;
+  
+}
+
+ul li a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	
+}
+
+li:after{
+	content:'';
+	position:absolute;
+	border-bottom: 3px solid #fff;
+	bottom:0;
+	left:0;
+	right:100%;
+	transition: all 500ms;
+}
+li:hover:after{
+	right: 0;
+}
+
+
+.toggle{
+	width: 100%;
+	padding: 10px 20px;
+	background: #455A64;
+	text-align: right;
+	box-sizing: border-box;
+	font-size: 30px;
+	color:#fff;
+	display: none;
+}
+.toggle:hover{
+	background: #263238;
+}
+
+
+.icon{
+	font-weight: bold;
+	color: #fff;
+	list-style: none;
+	position: absolute;
+	margin: -65px 20px;
+}
+@media (max-width:768px){
+		.toggle{
+			display: block;
+		}
+		ul{
+			width:100%;
+			display:none;
+		}
+		ul li{ 
+		display: block;
+		text-align: center;
+		}
+	.active{
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
