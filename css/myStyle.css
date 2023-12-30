@@ -94,15 +94,13 @@ font-family: 'Arial', sans-serif;
     0%, 100% {
         background: url('../images/1.jpeg') center/cover no-repeat;
     }
-    25% {
+    33% {
         background: url('../images/2.jpeg') center/cover no-repeat;
     }
-    50% {
+    66% {
         background: url('../images/3.jpeg') center/cover no-repeat;
     }
-    75% {
-        background: url('../images/1.jpeg') center/cover no-repeat;
-    }
+  
 }
 
 /* Add crossfade effect */
