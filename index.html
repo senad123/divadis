@@ -52,6 +52,7 @@
         <h1 class="display-4">Willkommen im DIVADIS!</h1>
         <p>Genießen Sie exzellente Speisen und herzliche Gastfreundschaft. Entdecken Sie köstliche Aromen in gemütlicher Atmosphäre.</p>
         <p> Wir freuen uns darauf, Sie bei uns begrüßen zu dürfen!</p>
+        
     </div>
 </header>
 
@@ -373,5 +374,27 @@
         window.addEventListener("scroll", handleVisibility);
     });
 </script>
+
+<script>
+    $(document).ready(function () {
+        var images = [
+            'url("../images/1.jpeg") center/cover no-repeat',
+            'url("../images/2.jpeg") center/cover no-repeat',
+            'url("../images/3.jpeg") center/cover no-repeat',
+         
+        ];
+    
+        var currentImage = 0;
+
+function changeBackground() {
+    $('#header').animate({ opacity: 0 }, 600, function () {
+        $(this).css('background', images[currentImage]).animate({ opacity: 1 }, 600);
+    });
+    currentImage = (currentImage + 1) % images.length;
+}
+
+setInterval(changeBackground, 6000); // Change image every 5 seconds
+});
+    </script>
 </body>
 </html>

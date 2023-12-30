@@ -69,30 +69,61 @@ font-family: 'Arial', sans-serif;
 
 /* Header Section */
 #header {
-background: url('../images/1.jpeg') center/cover no-repeat;
-position: relative;
-color: white;
-text-align: center;
-padding: 100px 0;
-transition: opacity 0.5s ease-in-out; /* Add a smooth fade-in transition */
-opacity: 0; /* Initially set opacity to 0 */
-
+    background: url('../images/1.jpeg') center/cover no-repeat;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+   
 }
 
 /* Add overlay effect */
 #header::before {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.2); /* Adjust the overlay color and opacity */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
 }
-/* Increase opacity when the header becomes visible */
-#header.visible {
-    opacity: 1;
+
+/* CSS animation to smoothly change background images */
+@keyframes changeBackground {
+    0%, 100% {
+        background: url('../images/1.jpeg') center/cover no-repeat;
+    }
+    25% {
+        background: url('../images/2.jpeg') center/cover no-repeat;
+    }
+    50% {
+        background: url('../images/3.jpeg') center/cover no-repeat;
+    }
+    75% {
+        background: url('../images/1.jpeg') center/cover no-repeat;
+    }
 }
+
+/* Add crossfade effect */
+@keyframes crossfade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#header::before {
+    animation: crossfade 1s ease; /* Adjust the duration as needed */
+}
+
+
+
+
+
+
 
 /* Title Font */
 #header h1 {
