@@ -27,9 +27,9 @@ font-family: 'Arial', sans-serif;
     body {
         padding-top: 80px;
        
-
     }
 }
+
 
 /* Underline animation on hover */
 .navbar-nav .nav-link {
@@ -69,7 +69,7 @@ font-family: 'Arial', sans-serif;
 
 /* Header Section */
 #header {
-    background: url('../images/1.jpeg') center/cover no-repeat;
+    background: url('../images/header/1.jpeg') center/cover no-repeat;
     position: relative;
     color: white;
     text-align: center;
@@ -91,16 +91,21 @@ font-family: 'Arial', sans-serif;
 
 /* CSS animation to smoothly change background images */
 @keyframes changeBackground {
-    0%, 100% {
-        background: url('./images/1.jpeg') center/cover no-repeat;
+    0% {
+        background: url('./images/header/1.jpeg') center/cover no-repeat;
     }
-    33% {
-        background: url('./images/2.jpeg') center/cover no-repeat;
+    25% {
+        background: url('./images/header/2.jpeg') center/cover no-repeat;
     }
-    66% {
-        background: url('./images/3.jpeg') center/cover no-repeat;
+    50% {
+        background: url('./images/header/3.jpeg') center/cover no-repeat;
     }
-  
+    75% {
+        background: url('./images/header/1.jpeg') center/cover no-repeat;
+    }
+    100%{
+        background: url('./images/header/1.jpeg') center/cover no-repeat;
+    }
 }
 
 /* Add crossfade effect */
@@ -143,7 +148,6 @@ line-height: 1.5; /* Adjust the line height for better readability */
 font-style: italic; /* Add italic style */
 text-shadow:0 0 1px transparent;
 }
-
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     #header h1 {
